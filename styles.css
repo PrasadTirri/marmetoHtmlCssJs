@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fffbf7;
+  overflow-x: hidden;
+  font-family: Tahoma, sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+.container {
+  max-width: 1177px;
+  margin: auto;
+  border-right: 1px solid #ddddf2;
+  padding: 0.5rem;
+}
+nav {
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddddf2;
+}
+.promoText {
+  position: relative;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #fe6a3a;
+  border-radius: 50%;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.cartIcons {
+  display: flex;
+  border: 2px solid black;
+}
+.cartIcons img {
+  padding: 5px 10px;
+  border-right: 2px solid black;
+}
+.cartIcons h1 {
+  padding: 5px 10px;
+}
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.searchContainer img {
+  width: 20px;
+}
+.search {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 450px;
+  margin-left: 20%;
+}
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  flex: 1;
+}
+.socialContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+}
+.socialContainer .line {
+  width: 150px;
+  height: 2px;
+  background: black;
+}
+#main {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.mainContent {
+  flex: 1;
+  width: 50%;
+  padding-right: 2rem;
+  margin-top: 2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.sCruve {
+  position: absolute;
+  left: -10%;
+}
+.mainContent h1 {
+  position: relative;
+}
+.speakIcon {
+  position: absolute;
+  bottom: 30px;
+  left: -40px;
+}
+.mainContent .line {
+  width: 100%;
+  height: 2px;
+  background: black;
+}
+.mainContent h1 {
+  font-size: 72px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 1rem;
+  line-height: 7rem;
+}
+.mainImage {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 1rem;
+}
+.mainImage img {
+  max-width: 100%;
+}
+.mainImage h2 {
+  margin-right: 20%;
+}
+.buttonsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 8rem;
+}
+.primary {
+  max-width: 360px;
+  padding: 0.75rem 1.25rem;
+  background-color: black;
+  color: white;
+  box-shadow: 5px 5px #fe6a3a;
+}
+.secondary {
+  max-width: 360px;
+  padding: 0.75rem 1.25rem;
+  background-color: transparent;
+  color: black;
+}
+#products {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.quote {
+  font-size: 30px;
+  padding: 2rem;
+  position: relative;
+}
+.quote span {
+  color: #b5b5ff;
+}
+.star {
+  position: absolute;
+  right: -1.5rem;
+  top: 0;
+}
+
+/*  mobile responsive */
+@media only screen and (max-width: 520px) {
+  .container {
+    border: none;
+    overflow-x: hidden;
+  }
+  .search {
+    min-width: 90%;
+    max-width: 90%;
+    margin-left: 0;
+    margin: auto;
+  }
+  .searchContainer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #main {
+    flex-direction: column;
+  }
+  .mainContent {
+    position: relative;
+    width: 100%;
+  }
+  .mainContent h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .mainImage {
+    transform: translateX(-30%);
+    margin-top: 2rem;
+  }
+  .mainImage h2 {
+    margin-right: 2rem;
+  }
+  #products {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .buttonsWrapper {
+    width: 100%;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .sCruve {
+    left: -10px;
+  }
+  .sCruve img {
+    width: 50% !important;
+    left: 0;
+  }
+  .star {
+    right: 0;
+  }
+  nav h2 {
+    font-size: 1rem;
+  }
+  .speakIcon {
+    bottom: 20px;
+    left: 30px;
+  }
+}
